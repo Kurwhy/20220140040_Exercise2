@@ -1,0 +1,208 @@
+body {
+    background-image: url('img/12121.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+.card {
+    background: #f8f9fa;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.album-art img {
+    width: 80%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.album-art img:hover {
+    transform: scale(1.05);
+}
+
+.card-title, .card-text {
+    margin: 10px 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.control-btn {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.control-img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.control-img:hover {
+    transform: scale(1.1);
+}
+
+#play-pause .control-img {
+    width: 40px;
+    height: 40px;
+}
+
+.volume-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.volume-slider input[type="range"] {
+    width: 100px;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.progress input[type="range"] {
+    flex: 1;
+    margin: 0 10px;
+    background: #ccc;
+}
+
+.gallery {
+    margin-top: 30px;
+    overflow-x: hidden;
+    margin-bottom: 30px;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    transition: transform 0.5s ease;
+}
+
+.gallery-image {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 200px;
+    margin: 0 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-image .caption {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    transition: bottom 0.3s ease;
+}
+
+.gallery-image:hover .caption {
+    bottom: 0;
+}
+.media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.video-wrapper {
+    position: relative;
+    width: 400px; /* Set width to 400px */
+    height: 600px; /* Set height to 600px */
+    border: 4px solid #fff1f1; /* Border with solid black color */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* To apply the border-radius to the video */
+}
+
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* To make the video cover the whole area */
+}
+.form-container {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    color: #fff;
+}
+.form-container h5 {
+    margin-bottom: 20px;
+}
+.form-container label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.form-container input, .form-container textarea, .form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+.form-container input[type="radio"] {
+    width: auto;
+}
+.form-container select {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+.form-container option {
+    background-color: #fff;
+    color: #000;
+}
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.form-container button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}

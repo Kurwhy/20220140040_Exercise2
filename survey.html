@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">POPCHI</a>
+            <a class="btn btn-primary" href="index.html">Home</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="form-container">
+            <form onsubmit="kirimData(event)">
+                <h5>Isi Data Dibawah</h5>
+                <label for="nama">Nama</label>
+                <input type="text" placeholder="Nama Anda" id="nama" name="nama">
+
+                <p>Jenis Kelamin</p>
+                <input type="radio" name="JK" id="laki-laki" value="laki-laki">
+                <label for="laki-laki">Laki-laki</label><br>
+                <input type="radio" name="JK" id="perempuan" value="perempuan">
+                <label for="perempuan">Perempuan</label><br>
+
+                <label for="music">Jenis Musik yang Disukai</label>
+                <select id="music" name="music">
+                    <option value="pop">Pop</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="rock">Rock</option>
+                    <option value="metal">Metal</option>
+                    <option value="gospel">Gospel</option>
+                    <option value="rnb">RnB</option>
+                </select>
+
+                <label for="lagu">Lagu Favorit</label>
+                <textarea placeholder="Tulis Lagu Favorit Kamu" name="lagu" id="lagu" cols="30" rows="5"></textarea>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
